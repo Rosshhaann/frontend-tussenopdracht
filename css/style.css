@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    margin:0;
+    font-family:"Nunito",sans-serif;
+    font-weight: bold;
+    width:100%;
+    
+}
+
+
+/* Navigatie Bar CSS */
+.navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#e2e7f0;
+    color:#717d96;
+    padding:15px 75px;
+    border-bottom:3px solid black;
+}
+
+.navBar a{    
+    padding:0px 20px;
+    text-decoration: none;
+}
+
+/* Alle foto ID's en Fotos CSS */
+#Logo{
+    height:90px;
+    color:white;
+ 
+}
+#gamingSetup{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/*  sectionOne CSS */
+#sectionOne{
+    padding:40px 75px;
+    border-bottom:3px solid black;
+    display:flex;   
+    justify-content: space-between;
+    gap:100px;
+}
+.sectionOneLinks{
+    width:60%;
+}
+.sectionOneRechts{
+    display:flex;
+    flex-direction:column;
+   justify-content: center;
+    width:40%;
+}
+.sectionOneBtn{
+    background-color: #2d3648;
+    padding: 10px 30px;
+    color:white;
+    font-family:inherit;
+    font-weight: inherit;
+}
+
+
