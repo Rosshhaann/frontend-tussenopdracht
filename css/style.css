@@ -29,13 +29,16 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:sticky;
+    top:-10px;
+    width:100%;
     background-color: #141444;
-    padding: 10px 75px;
+    padding: 6px 75px;
     border-bottom: 3px solid black;
 }
 
 .navBar a {
-    padding: 0px 20px;
+    padding-right: 100px;
     text-decoration: none;
     color: white;
 }
@@ -43,7 +46,7 @@ p {
 
 /* Alle foto ID's en Fotos CSS */
 #Logo {
-    width: 125px;
+    width: 110px;
     height: 100px;
 
 }
@@ -97,9 +100,8 @@ p {
 #sectionTwo {
     border-bottom: 3px solid black;
     display: flex;
-    align-items: center;
     gap: 50px;
-    padding: 20px 75px;
+    padding: 50px 75px;
 }
 
 .sectionTwoLinks {
