@@ -1,161 +1,319 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body {
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    font-weight: normal;
-    width: 100%;
-    color: #3f3f67;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
 
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin: 5px 0px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.25rem;
-    margin: 0px;
 }
 
 p {
-    font-size: 1.25rem;
+  font-weight: 500;
 }
 
-/* Navigatie Bar CSS */
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position:sticky;
-    top:-10px;
-    width:100%;
-    background-color: #141444;
-    padding: 6px 75px;
-    border-bottom: 3px solid black;
+h1 {
+  margin-top: 0;
+  font-size: 3.5rem;
 }
 
-.navBar a {
-    padding-right: 100px;
-    text-decoration: none;
-    color: white;
+h2 {
+  margin-top: 0;
+  font-size: 3rem;
 }
 
-
-/* Alle foto ID's en Fotos CSS */
-#Logo {
-    width: 110px;
-    height: 100px;
-
+h3 {
+  margin-top: 0;
+  font-size: 2rem;
 }
 
-#gamingSetup {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+/* NavBar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 3px solid black;
+  width: 100%;
+  padding: 0 4%;
 }
 
-/*  sectionOne CSS */
-#sectionOne {
-    padding: 40px 75px;
-    border-bottom: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
+nav img {
+  width: 150px;
+  object-fit: cover;
+  height: 90px;
 }
 
-.sectionOneLinks {
-    width: 60%;
-}
-
-.sectionOneRechts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-}
-
-.sectionOneBtn {
-    padding: 10px 30px;
-    color: white;
-    font-family: inherit;
-    font-weight: inherit;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 1rem;
-    background: linear-gradient(to right, #00b4d8 50%, #141444 50%);
-    background-size: 200% 100%;
-    background-position: right;
-    transition: all 650ms ease-in-out;
-}
-
-.sectionOneBtn:hover {
-    background-color: #3f3f67;
-    background-position: left;
-    color: white;
-}
-/* sectionTwo CSS */
-#sectionTwo {
-    border-bottom: 3px solid black;
-    display: flex;
-    gap: 50px;
-    padding: 50px 75px;
-}
-
-.sectionTwoLinks {
-    background-color: rgba(20, 20, 68, 0.2);
-    padding: 20px 50px;
-    width: 25%;
-}
-
-.sectionTwoRechts {
-    width: 75%;
-}
-
-/* sectionThree CSS */
-#sectionThree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px solid black;
-    padding: 20px 75px;
-
-}
-
-.gerelateerdeProducten {
-    padding-bottom: 30px;
-
-}
-
-.allProducts {
-    display: flex;
-    text-align: center;
-    gap: 100px;
-}
-
-.allProducts img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Footer CSS */
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    background-color: #141444;
-    padding: 30px 0px;
-}
-
+/* Nav and Footer anchors */
+nav a,
 footer a {
-    color: #3f6c65;
-    text-decoration: none;
+  padding: 0.9rem 2.5rem;
+  color: black;
+  text-decoration: none;
+  border-radius: 45px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
 
-.productEen, .productTwee, .productDrie {
-    width: 500px;
+nav a:hover,
+footer a:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 15px 10px 10px rgb(115, 113, 113);
+  transition: 650ms;
+}
+
+/*  Headers & Articles anchors */
+header a,
+article a {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+  color: white;
+  border: 3px solid black;
+  background: linear-gradient(to right, #ffffff 50%, #000000 40%);
+  background-size: 201% 100%;
+  background-position: right;
+  transition: all 650ms ease-in-out;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+header a:hover,
+article a:hover {
+  cursor: pointer;
+  background-position: left;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 15px 10px 5px rgb(115, 113, 113);
+}
+
+.headerAnchor {
+  width: 20%;
+  padding: 10px 30px;
+  border-radius: 45px 10px;
+  border: 1px solid white;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 1.15rem;
+  color: black;
+}
+
+/* Header Starts Here */
+header {
+  border-bottom: 3px solid black;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 0px;
+  background-image: url(/Week-6-Eindopdracht/images/headerImage1.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+}
+
+.headerBoxLeft {
+  text-align: center;
+  width: 40vw;
+  margin: 0 auto;
+}
+
+
+
+/* sectionOne */
+
+#sectionOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid black;
+  height: auto;
+  padding: 4%;
+}
+
+/* Articles */
+.articleBox {
+  display: flex;
+  gap: 0 50px;
+}
+
+article {
+  border: 3px solid black;
+  width: 22vw;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:ease-in-out 500ms;
+}
+
+article:hover {
+  box-shadow: 10px 10px 20px rgb(115, 113, 113);
+  cursor: pointer;
+  transition:ease-in-out 500ms;
+  transform: scale(1.1);
+}
+
+article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+article a {
+  padding: 10px 30px;
+  border-radius: 45px 10px;
+}
+
+.project {
+  display: flex;
+  padding: 30px 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 3px solid black;
+}
+
+
+
+/* sectionTwo AKA FORM  */
+#sectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0%;
+  background-image: url(/Week-6-Eindopdracht/images/headerImage1.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right;
+  color: white;
+}
+
+
+/* Form */
+form {
+  min-width: 600px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+form div {
+  width: 100%;
+  gap: 0px 15px;
+}
+
+.input-width {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-width input, .input-width select {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 6px solid white;
+  transition: all 650ms ease-in-out;
+}
+
+.input-width input:hover, select:hover, textarea:hover {
+  transition: all 650ms ease-in-out;
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+/* Tot hier heb ik alles wat te maken heeft met de form, inputs, select etc.. */
+
+/* Div classes van de Form */
+.name-container, .city-container {
+  display: flex;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+
+}
+
+textarea {
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 650ms ease-in-out;
+}
+
+.newsLetter-options {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 10px 0;
+}
+
+.checkBox {
+  display: flex;
+  align-items: flex-end;
+}
+
+form button {
+  font-weight: bold;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  color: white;
+  border-radius: 45px 10px;
+  border: 5px solid white;
+  background: linear-gradient(to right, #ffffff 50%, #000000 40%);
+  background-size: 201% 100%;
+  background-position: right;
+  transition: all 750ms ease-in-out;
+  border: 2px solid white;
+  letter-spacing: 2px;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-position: left;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 15px 10px 5px rgb(115, 113, 113);
+}
+
+
+
+/* Footer */
+footer {
+  padding: 1% 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid black;
+}
+
+#socials i:hover {
+  transition: 650ms;
+  font-size: 1.6rem;
+}
+
+footer img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+
+.footerRight {
+  display: flex;
+  gap: 35px;
 }
